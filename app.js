@@ -8,10 +8,8 @@ const session = require('express-session')
 const flash = require('express-flash')
 const passport = require('passport')
 const config = require('./config/index')
-const path = require('path');
+// const path = require('path');
 
-
-var userProfile;
 
 const {
     PORT
@@ -23,7 +21,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(logger('dev'));
 app.use(express.json());
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(session({
     secret: 'this is a secret',
