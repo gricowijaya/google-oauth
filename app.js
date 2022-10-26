@@ -8,7 +8,7 @@ const session = require('express-session')
 const flash = require('express-flash')
 const passport = require('passport')
 const config = require('./config/index')
-const path = require('path');
+// const path = require('path');
 
 
 const {
@@ -22,7 +22,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(cookieParser());
 
-app.use('views', path.join(__dirname, 'views'));
+// app.use('views', path.join(__dirname, 'views'));
 
 app.use(session({
     secret: 'this is a secret',
