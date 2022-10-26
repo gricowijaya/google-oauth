@@ -8,6 +8,9 @@ router.get('/', function(req, res, next) {
   res.render('pages/login.ejs');
 });
 
+router.get('/test', function(req, res, next) {
+  res.render('test.ejs');
+});
 
 router.get('/auth/google', 
     passport.authenticate('google', { 
