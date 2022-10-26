@@ -52,7 +52,6 @@ passport.use(new GoogleStrategy({
 ));
 
 
-
 app.use(routes);
 app.listen(PORT, () => { console.log(`running at port ${PORT}, the callback is ${config.googleAuth.callbackURL}`) });
 
